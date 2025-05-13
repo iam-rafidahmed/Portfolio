@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Porfolio</title>
+
+    <!-- using inline css -->
+
     <style>
         body {
 
@@ -13,47 +16,131 @@
                 padding: 0;
             }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;    
-    height: 90px;
-    background-color: rgb(20, 15, 65);
-}
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-nav ul li {
-    list-style: none;
-    margin: 0 23px;
-}
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 90px;
+                background-color: rgb(20, 15, 65);
+            }
+
+            nav ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li {
+                list-style: none;
+                margin: 0 23px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            nav ul li a:hover {
+               
+                color: rgb(130, 130, 241);
+                font-size: 1.04rem;
+            }
+
             background-color: rgb(0, 0, 33);
             color: white;
         }
 
-        .left{
-            font-size: 1.5rem;
+        .left {
+            font-size: 2rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
+
+        .firstsection {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+         
+        }
+
+        .firstsection > div{
+
+           width: 30%;
+        }
+
+        .leftsection {
+          
+            font-size: 3rem;
+            margin: 50px 0;
+           
+        }
+        .rightsection img{
+
+            width: 100%;
+            margin :30px 0;
+           
+        }
+
+.red{
+    color: rgb(152, 76, 224);
+   font-family: cursive;
+
+
+}
+
+#element{
+    color: rgb(152, 76, 224);
+}
+
+
+
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Rafid's Portfolio</div>
+            <div class="left">Rafid.dev</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About </li>
-                    <li>Education </li>
-                    <li>Contact Me </li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About </a></li>
+                    <li><a href="/">Education </a></li>
+                    <li><a href="/">Contact Me </a></li>
                 </ul>
 
 
             </div>
         </nav>
     </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+           Hi,I am <span class="red">Rafid Ahmed</span>
+<div>I'm developing my skills in </div>
+<span id="element"></span>
+            </div>
+
+            <div class="rightsection">
+                <img src="p2.png" alt="">
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['front-end', 'using HTML' ,'JS and React.js'],
+      typeSpeed: 50,
+    });
+  </script>
+
+
+
 </body>
 
 </html>
