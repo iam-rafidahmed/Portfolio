@@ -40,7 +40,7 @@
             }
 
             nav ul li a:hover {
-               
+
                 color: rgb(130, 130, 241);
                 font-size: 1.04rem;
             }
@@ -59,40 +59,95 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-         
+
         }
 
-        .firstsection > div{
+        .firstsection>div {
 
-           width: 30%;
+            width: 30%;
         }
 
         .leftsection {
-          
+
             font-size: 3rem;
             margin: 50px 0;
-           
+
         }
-        .rightsection img{
+
+        .rightsection img {
 
             width: 100%;
-            margin :30px 0;
-           
+            margin: 30px 0;
+
+        }
+        main hr {
+            border: 0;
+            background-color: rgb(118, 158, 224);
+            height: 1.2px;
+            margin: 30px 84px;
         }
 
-.red{
-    color: rgb(152, 76, 224);
-   font-family: cursive;
+        .red {
+            color: rgb(152, 76, 224);
+            font-family: cursive;
 
 
-}
+        }
+        .seconsSection h1{
+            font: size 2rem; ;
+        }
 
-#element{
-    color: rgb(152, 76, 224);
-}
+        #element {
+            color: rgb(152, 76, 224);
+        }
+        .gray {
+            color: gray;
+            font-style: italic;
+            font-family: 'Lucida Sans';
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
 
+        .secondSection .box {
+                    background: white;
+                    width: 80vw;
+                    height: 2px;
+                    margin: 55px 0;
+                    display: flex;
+        }
 
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
 
+        .image-top{
+            width: 28px;
+            position: relative;
+            top: -31px;
+            left: -11px;
+        }
+        .vertical-tittle {
+            position: relative;
+            top: 75px;
+            width: 140px;
+            left: -20px;
+           
+
+        }
+        .vertical-desc{
+                position: relative;
+                top: 85px;
+                color: gray;
+                width: 150px;
+                font-size: 9px ;
+                left: -20px;
+        }
     </style>
 </head>
 
@@ -116,28 +171,99 @@
     <main>
         <section class="firstsection">
             <div class="leftsection">
-           Hi,I am <span class="red">Rafid Ahmed</span>
-<div>I'm developing my skills in </div>
-<span id="element"></span>
+                Hi,I am <span class="red">Rafid Ahmed</span>
+                <div>I'm developing my skills in </div>
+                <span id="element"></span>
             </div>
 
             <div class="rightsection">
                 <img src="p2.png" alt="">
             </div>
         </section>
-    </main>
+<hr>
+        <section class="secondSection">
+            <span class="gray">To the Infinity</span>
+            <h1>Learning Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="c.png" alt="">
+                    <div class="vertical-tittle">
+                        C Language
+                    </div>
+                    <div class="vertical-desc">C is a powerful and efficient programming language widely used for system programming and embedded systems. It provides low-level memory access and is the foundation for many modern languages like C++ and Python.
+                    </div>
+                </div>
 
+
+                <div class="vertical">
+                    <img class="image-top" src="c++.png" alt="">
+                    <div class="vertical-tittle">
+                        C++ Language
+                    </div>
+                    <div class="vertical-desc">C++ is an extension of the C programming language that supports object-oriented programming, making it ideal for large and complex software projects. It combines the performance of C with features like classes, inheritance, and polymorphism.
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-tittle">
+                        HTML
+                    </div>
+                    <div class="vertical-desc">HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It defines elements like headings, paragraphs, links, and images to build web pages.
+
+                    </div>
+                </div>
+
+
+
+                <div class="vertical">
+                    <img class="image-top" src="css.png" alt="">
+                    <div class="vertical-tittle">
+                        CSS
+                    </div>
+                    <div class="vertical-desc">CSS (Cascading Style Sheets) is used to style and layout HTML elements on a web page. It controls the design aspects like colors, fonts, spacing, and responsiveness.
+
+                    </div>
+                </div>
+
+
+                <div class="vertical">
+                    <img class="image-top" src="js.png" alt="">
+                    <div class="vertical-tittle">
+                        JavaScript
+                    </div>
+                    <div class="vertical-desc">JavaScript is a scripting language used to make web pages interactive and dynamic. It enables features like form validation, animations, and real-time content updates in the browser.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="react.png" alt="">
+                    <div class="vertical-tittle">
+                        React.Js
+                    </div>
+                    <div class="vertical-desc">React is a JavaScript library developed by Facebook for building fast and interactive user interfaces. It uses a component-based architecture and a virtual DOM to efficiently update web pages.
+
+                    </div>
+                </div>
+            
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
 
     <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['front-end', 'using HTML' ,'JS and React.js'],
-      typeSpeed: 50,
-    });
-  </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['front-end', 'using HTML', 'JS and React.js'],
+            typeSpeed: 50,
+        });
+    </script>
 
 
 
